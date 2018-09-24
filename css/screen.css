@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: 'InterUI';
-  font-weight: "800";
+  font-weight: "700";
   src: url('../fonts/Inter-UI-Bold.woff2');
 }
 
@@ -463,7 +463,7 @@ a:focus {
 }
 
 
-.c-logo__path--1{    
+.c-logo__path--1{
     fill:#20223A;
 }
 
