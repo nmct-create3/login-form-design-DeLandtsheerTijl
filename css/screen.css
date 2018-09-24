@@ -2,6 +2,24 @@
 #FONTS
 \*------------------------------------*/
 
+@font-face {
+  font-family: 'InterUI';
+  font-weight: "800";
+  src: url('../fonts/Inter-UI-Bold.woff2');
+}
+
+@font-face {
+  font-family: 'InterUI';
+  font-weight: "600";
+  src: url('../fonts/Inter-UI-Medium.woff2');
+}
+
+@font-face {
+  font-family: 'InterUI';
+  font-weight: "400";
+  src: url('../fonts/Inter-UI-Regular.woff2');
+}
+
 /*------------------------------------*\
 #Variables
 \*------------------------------------*/
@@ -25,12 +43,12 @@
 html {
     font-size: 16px;
     line-height: 1.5;
-    font-family: Helvetica, arial, sans-serif;
-    color: grey;
+    font-family: InterUI, Helvetica, arial, sans-serif;
+    color: #20223A;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: white;
+    background-color: #F5F6FA;
 }
 
 *,
@@ -47,13 +65,13 @@ html {
 */
 
 ::-moz-selection {
-    background: HotPink;
+    background: #3385FF ;
     color: white;
     text-shadow: none;
 }
 
 ::selection {
-    background: HotPink;
+    background: #3385FF ;
     color: white;
     text-shadow: none;
 }
@@ -158,18 +176,18 @@ hr {
 }
 
 a {
-    color: HotPink;
+    color: #3385FF ;
     transition: all .1s ease-in-out;
 }
 
 a:visited,
 a:active {
-    color: HotPink;
+    color: #2E77E6;
 }
 
 a:hover,
 a:focus {
-    color: DeepPink;
+    color: #2E77E6;
 }
 
 /*------------------------------------*\
@@ -432,6 +450,30 @@ a:focus {
     Website main logo
 */
 
+.c-logo{
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 48px;
+
+}
+
+.c-logo__symbol{
+    height: 100%;
+}
+
+
+.c-logo__path--1{    
+    fill:#20223A;
+}
+
+.c-logo__path--2{
+    fill:#3385FF;
+}
+
+.c-logo__path--3{
+    fill:#1B4186;
+}
 /*
     Component: Card
     ---
