@@ -64,7 +64,7 @@ html {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #F5F6FA;
+    background-color: var(--color-alpha);
 }
 
 *,
@@ -194,6 +194,7 @@ hr {
 a {
     color: var(--color-alpha) ;
     transition: all .1s ease-in-out;
+    text-decoration: none;
 }
 
 a:visited,
@@ -495,6 +496,18 @@ label{
 .c-logo__path--3{
     fill:var(--color-alpha-x-dark);
 }
+
+.c-logo__path--1{
+    fill:white;
+}
+
+.c-logo__path--2{
+    fill:white;
+}
+
+.c-logo__path--3{
+    fill:white;
+}
 /*
     Component: Card
     ---
@@ -509,27 +522,33 @@ label{
 }
 
 .c-card__body{
-    padding: 48px 24px 48px 24px;
+    padding: 48px 24px 47px 24px;
 }
 
 @media (min-width: 768px) {
     .c-card__body{
-        padding: 48px;
+        padding: 48px 48px 47px 48px;
     }
 }
 
+
 .c-card__title{
     text-align: center;
-    padding: 48px 48px 0 48px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    padding-bottom: 48px;
     margin: 0;
 }
 
 .c-card__footer {
   text-align: center;
-  border-top: solid 2px rgba(0, 0, 0, 0.05);
-  padding-top: 14px;
-  padding-bottom: 1px;
-  margin: 0;
+  border-top: solid 1px rgba(0, 0, 0, 0.05);
+  padding: 24px;
+}
+
+.c-card__footer-removemargin{
+    margin-bottom: 0;
 }
 
 /*
@@ -570,7 +589,14 @@ label{
 */
 
 .c-label {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 8px;
+    color: var(--color-neutral-dark);
+}
 
+.c-label--option{
+    margin: 0 0 0 8px;
 }
 
 /* If a input is focused within the form-field class change te color of the label */
@@ -698,6 +724,10 @@ label{
     ---
     Utility classes to put specific margins and paddings onto elements
 */
+
+.u-pt-stat{
+    padding-top: 24px;
+}
 
 .u-pt-clear {
     padding-top: 0 !important;
